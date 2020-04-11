@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\ExpenseReport;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ExpenseController extends Controller
 {
