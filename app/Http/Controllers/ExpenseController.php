@@ -21,9 +21,11 @@ class ExpenseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(ExpenseReport $expenseReport)
     {
-        //
+        return view('expense.create', [
+            'report' => $expenseReport
+        ]);
     }
 
     /**
