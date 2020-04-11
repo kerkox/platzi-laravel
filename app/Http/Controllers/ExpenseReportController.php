@@ -80,6 +80,10 @@ class ExpenseReportController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+        $validateData = $request->validate([
+            'title' => 'required|min:3'
+        ]);
         $report = ExpenseReport::findOrFail($id);
         $report->title = $request->get('title');
         $report->save();

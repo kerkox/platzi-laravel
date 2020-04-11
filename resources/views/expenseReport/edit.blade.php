@@ -26,7 +26,7 @@
             @method('put')
             <div class="form-group">
                 <label for="title">Title:</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="type a title">
+                <input type="text" class="form-control" id="title" name="title" placeholder="type a title" value="{{ old('title') }}">
             </div>
             <button class="btn btn-primary" type="submit">Submit</button>
         </form>
