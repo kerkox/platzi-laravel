@@ -118,4 +118,9 @@ class ExpenseReportController extends Controller
             'report' => $expenseReport
         ]);
     }
+
+    public function SendMail(ExpenseReport $expenseReport)
+    {
+
+    }
 }
